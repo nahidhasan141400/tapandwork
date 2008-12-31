@@ -10,4 +10,4 @@ nav.addEventListener('click',(e)=>{
     e.stopPropagation();
     nav.className = 'nava d';
 });
- console.log("test");
+ 
