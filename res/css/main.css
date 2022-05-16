@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap");
+#btn-login {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #3198f1;
+  color: #FFF;
+}
+
+#btn-login:hover {
+  background-color: #205d93;
+}
+
+#get-start {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: white;
+  background: #3198f1;
+  border-radius: 20px;
+  font-size: 26px;
+  margin: 20px;
+  font-weight: 600;
+}
+
+#get-start:hover {
+  color: #3198f1;
+  background: white;
+}
+
+.gap {
+  width: 0px;
+  height: 100vh;
+}
+
+.titel {
+  width: 100%;
+  text-align: center;
+}
+
+.titel h1 {
+  font-size: 40px;
+  padding: 20px;
+  color: #455b6e;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.titel h1::after {
+  content: '';
+  width: 400px;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#205d93), to(#6293bd));
+  background: linear-gradient(90deg, #205d93, #6293bd);
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hedar {
+  width: 100vw;
+  height: 100vh;
+  background: #b0c9de url("../../img/elc.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  margin-bottom: 100vh;
+}
+
+.hedar nav {
+  max-width: 1200px;
+  margin: auto;
+  height: 100px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hedar nav a {
+  width: 100px;
+  height: 100%;
+}
+
+.hedar nav a img {
+  height: 100%;
+}
+
+.hedar nav ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hedar nav ol li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3198f1;
+}
+
+.hedar nav ol li a:hover {
+  color: #1f5f96;
+}
+
+.hedar .hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+.hedar .hero .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hedar .hero .text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #1f5f96;
+  padding: 10px;
+}
+
+.hedar .hero .text p {
+  font-size: 20px;
+}
+
+.hedar .hero .img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hedar .hero .img img {
+  width: 60%;
+}
+
+.app-download {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: #ecf6ff;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .app-download {
+    margin: 0px;
+    border-radius: 0;
+  }
+}
+
+.app-download .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-download .text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f5f96;
+}
+
+.app-download .text p {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.app-download .button {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-download .button a img {
+  width: 250px;
+  padding: 10px;
+}
+
+.app-download .button a img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.service {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.service .sers {
+  width: 100%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service .sers .pres {
+  width: 350px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #35a1ff4b;
+  border-radius: 20px;
+}
+
+.service .sers .pres:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.service .sers .pres img {
+  width: 120px;
+}
+
+.service .sers .pres h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #455b6e;
+}
+
+.service .sers .pres p {
+  font-size: 20px;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.about h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #455b6e;
+  padding-bottom: 10px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.catagory {
+  width: 100%;
+  position: relative;
+}
+
+.catagory .cat {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catagory .cat .worker {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ecf6ff;
+  margin: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.159);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.159);
+}
+
+.catagory .cat .worker img {
+  width: 100px;
+}
+
+.catagory .cat .worker h1 {
+  font-size: 20px;
+  color: #455b6e;
+}
+
+.newsletar {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.newsletar form {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  background-color: #ecf6ff;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.126);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.126);
+}
+
+@media (max-width: 1200px) {
+  .newsletar form {
+    margin: 0px;
+    border-radius: 0;
+  }
+}
+
+.newsletar form .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletar form .text h1 {
+  font-size: 30px;
+  color: #455b6e;
+  text-transform: capitalize;
+}
+
+.newsletar form .action {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletar form .action input {
+  width: 80%;
+  height: 50px;
+  background: #3198f1;
+  border: none;
+  font-size: 25px;
+  padding: 5px 10px;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.087);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.087);
+}
+
+.newsletar form .action input::-webkit-input-placeholder {
+  color: white;
+}
+
+.newsletar form .action input:-ms-input-placeholder {
+  color: white;
+}
+
+.newsletar form .action input::-ms-input-placeholder {
+  color: white;
+}
+
+.newsletar form .action input::placeholder {
+  color: white;
+}
+
+.newsletar form .action button {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  background: #3198f1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.087);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.087);
+}
+
+.newsletar form .action button:hover {
+  background: white;
+  color: #3198f1;
+}
+
+.newsletar form .action button:active {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}

@@ -1,0 +1,49 @@
+#btn-login{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: $bl;
+    color: #FFF;
+    &:hover{
+        background-color: #205d93;
+    }
+}
+
+#get-start{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    background: $bl;
+    border-radius: 20px;
+    font-size: 26px;
+    margin: 20px;
+    font-weight: 600;
+    &:hover{
+        color: $bl;
+        background: white;
+    }
+}
+.gap{
+    width: 0px;
+    height: 100vh;
+}
+.titel{
+    width: 100%;
+    text-align: center;
+    h1{
+        font-size: 40px;
+        padding: 20px;
+        color: #455b6e;
+        text-transform: capitalize;
+        position: relative;
+        &::after{
+            content: '';
+            width:400px;
+            height:5px;
+            background: linear-gradient(90deg , #205d93, #6293bd);
+            position: absolute;
+            bottom: 40px;
+            left: 0px;
+        }
+
+    }
+}
