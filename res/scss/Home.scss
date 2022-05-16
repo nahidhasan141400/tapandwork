@@ -74,6 +74,12 @@ body{
     left: 50px;
     bottom: 50px;
     box-shadow: 0 0 5px #507ba1,0 0 10px #507ba1bd,0 0 20px #507ba178;
+    @media (max-width:720px) {
+        height: 60px;
+        width: 60px;
+        bottom: 20px;
+        left: 20px;
+    }
     .show{
         width: 100%;
         height: 100%;
@@ -90,14 +96,22 @@ body{
         width: 100%;
         height: 100%;
         .f , .s ,.t{
+            @media (max-width:720px) {
+                width: 100%;
+                height: 10px;
+                padding: 0;
+            }
             span{
                 width: 15px;
                 height: 15px;
+                @media (max-width:720px) {
+                    width: 8px;
+                    height: 8px;
+                }
                 a{
                     width: 10px;
                     height: 10px;
                     visibility: hidden;
-                    
                 }
             }
         }
@@ -111,6 +125,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:720px) {
+        height: 60px;
+    }
     #logo{
         height: 100%;
         img{
@@ -122,6 +139,12 @@ body{
         position: relative;
         display:flex;
         align-items: center;
+        @media (max-width:720px) {
+            position: absolute;
+            bottom: -70px;
+            left: 0px;
+            width: 100%;
+        }
         .input{
             height: 50px;
             width: 400px;
@@ -129,6 +152,11 @@ body{
             display: grid;
             grid-template-columns: 2fr 1fr;
             border-radius: 20px;
+            @media (max-width:720px) {
+              height: 30px;
+              width: 90%;
+              margin: auto;
+            }
             input{
                 background: transparent;
                 font-size: 22px;
@@ -136,6 +164,10 @@ body{
                 outline: none;
                 border: none;
                 padding:10px;
+                @media (max-width:720px) {
+                    font-size: 16px;
+                    padding: 0px 10px;
+                }
             }
             button{
                 background: none;
@@ -144,6 +176,9 @@ body{
                 cursor: pointer;
                 color: $bld;
                 padding-right: 5px;
+                @media (max-width:720px) {
+                    font-size: 20px;
+                }
                 &:hover{
                     font-size: 27px;
                 }
@@ -157,11 +192,18 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media (max-width:720px) {
+                width: 130px;
+        }
         a img{
             height:80px;
             width: 80px;
             border-radius: 50%;
             border: 1px solid $bl;
+            @media (max-width:720px) {
+                height: 40px;
+                width: 40px;
+            }
             &:hover{
                 border: 2px solid $bl;
                 box-shadow: 0 0 5px $bld;
@@ -177,6 +219,9 @@ body{
             span{
                 font-size: 40px;
                 color: $bl;
+                @media (max-width:720px) {
+                    font-size: 25px;
+                }
             }
             h1{
                 height: 25px;
@@ -192,6 +237,11 @@ body{
                 background: red;
                 top: 1px;
                 right: 3px;
+                @media (max-width:720px) {
+                    font-size: 14px;
+                    height: 18px;
+                    width: 18px;
+                }
             }
         }
     }
@@ -201,11 +251,19 @@ body{
     width: 100%;
     position: relative;
     height: 320px;
+    @media (max-width:720px) {
+     height: 180px;
+     margin-top: 80px;       
+    }
     h1{
         color: $bl;
         font-size: 30px;
         margin-left: 40px;
         margin-top: 60px;
+        @media (max-width:720px) {
+            font-size: 25px;  
+            margin-left: 20px;     
+        }
     }
     .catagorys{
         width: 90%;
@@ -215,9 +273,16 @@ body{
         align-items: center;
         overflow-x: auto;
         margin-top: 30px;
+        @media (max-width:720px) {
+            margin-top: 10px;  
+            width: 100%;     
+        }
         &::-webkit-scrollbar{
             width: 0px;
             height: 8px;
+            @media (max-width:720px) {
+                height: 0px;
+            }
         }
         &::-webkit-scrollbar-thumb{
             background: linear-gradient(60deg,$bl , $bld);
@@ -235,11 +300,18 @@ body{
             text-align: center;
             border-radius: 20px;
             margin: 20px;
+            @media (max-width:720px) {
+                min-width: 100px;
+                min-height: 100px;   
+            }
             &:hover{
                 transform: scale(105%);
             }
             img{
                 height: 100px;
+                @media (max-width:720px) {
+                    height: 40px;
+                }
 
             }
             h1{
@@ -247,6 +319,10 @@ body{
                 margin-left: 0px;
                 margin-top: 0px;
                 padding-top: 20px;
+                @media (max-width:720px) {
+                    font-size: 13px;
+                    padding-top: 10px;
+                }
 
             }
         }
@@ -257,9 +333,18 @@ body{
     height: 400px;
     position: relative;
     padding: 20px;
+    @media (max-width:720px) {
+        padding: 0;
+        margin-top: 20px;
+    }
+
     h1{
         font-size: 30px;
         color: $bl;
+        padding-left: 20px;
+        @media (max-width:720px) {
+          font-size: 25px;       
+        }
     }
     .top-tecs{
         width: 90%;
@@ -268,6 +353,23 @@ body{
         display: flex;
         justify-content: left;
         align-items: center;
+        overflow-x: auto;
+
+        @media (max-width:720px) {
+            height: 200px;  
+            width: 100%;     
+        }
+        &::-webkit-scrollbar{
+            width: 0px;
+            height: 8px;
+            @media (max-width:720px) {
+                height: 0px;
+            }
+        }
+        &::-webkit-scrollbar-thumb{
+            background: linear-gradient(60deg,$bl , $bld);
+            border-radius: 20px;
+        }
         .technician{
             width: 300px;
             height: 100%;
@@ -276,24 +378,41 @@ body{
             align-items: center;
             flex-direction: column;
             text-decoration: none;
-            margin-right: 2px;
+            margin-right: 20px;
+            @media (max-width:720px) {
+             min-width: 120px;  
+            }
             img{
                 height: 150px;
                 border-radius: 50%;
                 border: 1px solid $bl;
+                @media (max-width:720px) {
+                  height: 70px;
+                }
             }
             h1{
                 font-size: 25px;
                 padding: 10px 0;
+                @media (max-width:720px) {
+                    font-size: 16px;
+                    padding: 5px 0;
+                }
             }
             h2{
                 font-size: 19px;
                 margin-bottom: 5px;
                 color: #3e5569;
+                @media (max-width:720px) {
+                    font-size: 13px;
+                    margin-bottom: 2px;
+                }
             }
             .star{
                 color: gold;
                 font-size: 18px;
+                @media (max-width:720px) {
+                 font-size: 12px;
+                }
             }
         }
     }

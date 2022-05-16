@@ -103,6 +103,15 @@ body {
           box-shadow: 0 0 5px #507ba1,0 0 10px #507ba1bd,0 0 20px #507ba178;
 }
 
+@media (max-width: 720px) {
+  .d.nava {
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
 .d.nava .show {
   width: 100%;
   height: 100%;
@@ -123,9 +132,24 @@ body {
   height: 100%;
 }
 
+@media (max-width: 720px) {
+  .d.nava .tog .f, .d.nava .tog .s, .d.nava .tog .t {
+    width: 100%;
+    height: 10px;
+    padding: 0;
+  }
+}
+
 .d.nava .tog .f span, .d.nava .tog .s span, .d.nava .tog .t span {
   width: 15px;
   height: 15px;
+}
+
+@media (max-width: 720px) {
+  .d.nava .tog .f span, .d.nava .tog .s span, .d.nava .tog .t span {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .d.nava .tog .f span a, .d.nava .tog .s span a, .d.nava .tog .t span a {
@@ -150,6 +174,12 @@ body {
           align-items: center;
 }
 
+@media (max-width: 720px) {
+  .profile {
+    height: 60px;
+  }
+}
+
 .profile #logo {
   height: 100%;
 }
@@ -169,6 +199,15 @@ body {
           align-items: center;
 }
 
+@media (max-width: 720px) {
+  .profile form {
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
 .profile form .input {
   height: 50px;
   width: 400px;
@@ -180,6 +219,14 @@ body {
   border-radius: 20px;
 }
 
+@media (max-width: 720px) {
+  .profile form .input {
+    height: 30px;
+    width: 90%;
+    margin: auto;
+  }
+}
+
 .profile form .input input {
   background: transparent;
   font-size: 22px;
@@ -189,6 +236,13 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 720px) {
+  .profile form .input input {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+}
+
 .profile form .input button {
   background: none;
   border: none;
@@ -196,6 +250,12 @@ body {
   cursor: pointer;
   color: #4c83b3;
   padding-right: 5px;
+}
+
+@media (max-width: 720px) {
+  .profile form .input button {
+    font-size: 20px;
+  }
 }
 
 .profile form .input button:hover {
@@ -216,11 +276,24 @@ body {
           align-items: center;
 }
 
+@media (max-width: 720px) {
+  .profile .user {
+    width: 130px;
+  }
+}
+
 .profile .user a img {
   height: 80px;
   width: 80px;
   border-radius: 50%;
   border: 1px solid #3198f1;
+}
+
+@media (max-width: 720px) {
+  .profile .user a img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .profile .user a img:hover {
@@ -249,6 +322,12 @@ body {
   color: #3198f1;
 }
 
+@media (max-width: 720px) {
+  .profile .user .notification span {
+    font-size: 25px;
+  }
+}
+
 .profile .user .notification h1 {
   height: 25px;
   width: 25px;
@@ -271,10 +350,25 @@ body {
   right: 3px;
 }
 
+@media (max-width: 720px) {
+  .profile .user .notification h1 {
+    font-size: 14px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
 .catagory {
   width: 100%;
   position: relative;
   height: 320px;
+}
+
+@media (max-width: 720px) {
+  .catagory {
+    height: 180px;
+    margin-top: 80px;
+  }
 }
 
 .catagory h1 {
@@ -282,6 +376,13 @@ body {
   font-size: 30px;
   margin-left: 40px;
   margin-top: 60px;
+}
+
+@media (max-width: 720px) {
+  .catagory h1 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
 }
 
 .catagory .catagorys {
@@ -300,9 +401,22 @@ body {
   margin-top: 30px;
 }
 
+@media (max-width: 720px) {
+  .catagory .catagorys {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
 .catagory .catagorys::-webkit-scrollbar {
   width: 0px;
   height: 8px;
+}
+
+@media (max-width: 720px) {
+  .catagory .catagorys::-webkit-scrollbar {
+    height: 0px;
+  }
 }
 
 .catagory .catagorys::-webkit-scrollbar-thumb {
@@ -333,6 +447,13 @@ body {
   margin: 20px;
 }
 
+@media (max-width: 720px) {
+  .catagory .catagorys .in-cata {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
 .catagory .catagorys .in-cata:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
@@ -342,11 +463,24 @@ body {
   height: 100px;
 }
 
+@media (max-width: 720px) {
+  .catagory .catagorys .in-cata img {
+    height: 40px;
+  }
+}
+
 .catagory .catagorys .in-cata h1 {
   font-size: 19px;
   margin-left: 0px;
   margin-top: 0px;
   padding-top: 20px;
+}
+
+@media (max-width: 720px) {
+  .catagory .catagorys .in-cata h1 {
+    font-size: 13px;
+    padding-top: 10px;
+  }
 }
 
 .top {
@@ -356,9 +490,23 @@ body {
   padding: 20px;
 }
 
+@media (max-width: 720px) {
+  .top {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
 .top h1 {
   font-size: 30px;
   color: #3198f1;
+  padding-left: 20px;
+}
+
+@media (max-width: 720px) {
+  .top h1 {
+    font-size: 25px;
+  }
 }
 
 .top .top-tecs {
@@ -374,6 +522,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: auto;
+}
+
+@media (max-width: 720px) {
+  .top .top-tecs {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+.top .top-tecs::-webkit-scrollbar {
+  width: 0px;
+  height: 8px;
+}
+
+@media (max-width: 720px) {
+  .top .top-tecs::-webkit-scrollbar {
+    height: 0px;
+  }
+}
+
+.top .top-tecs::-webkit-scrollbar-thumb {
+  background: linear-gradient(60deg, #3198f1, #4c83b3);
+  border-radius: 20px;
 }
 
 .top .top-tecs .technician {
@@ -393,7 +565,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none;
-  margin-right: 2px;
+  margin-right: 20px;
+}
+
+@media (max-width: 720px) {
+  .top .top-tecs .technician {
+    min-width: 120px;
+  }
 }
 
 .top .top-tecs .technician img {
@@ -402,9 +580,22 @@ body {
   border: 1px solid #3198f1;
 }
 
+@media (max-width: 720px) {
+  .top .top-tecs .technician img {
+    height: 70px;
+  }
+}
+
 .top .top-tecs .technician h1 {
   font-size: 25px;
   padding: 10px 0;
+}
+
+@media (max-width: 720px) {
+  .top .top-tecs .technician h1 {
+    font-size: 16px;
+    padding: 5px 0;
+  }
 }
 
 .top .top-tecs .technician h2 {
@@ -413,7 +604,20 @@ body {
   color: #3e5569;
 }
 
+@media (max-width: 720px) {
+  .top .top-tecs .technician h2 {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+}
+
 .top .top-tecs .technician .star {
   color: gold;
   font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .top .top-tecs .technician .star {
+    font-size: 12px;
+  }
 }
