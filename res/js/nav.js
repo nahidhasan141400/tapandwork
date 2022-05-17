@@ -1,7 +1,9 @@
-let nav = document.querySelector('nav')
+let nav = document.querySelector('nav');
+let loader = document.querySelector('.loader');
+
 window.addEventListener('scroll',()=>{
     let yy = window.pageYOffset;
-    if (yy > (window.screen.availHeight)){
+    if (yy > (window.screen.availHeight - 100)){
         nav.className = 'show';
     }
     else{
@@ -10,4 +12,6 @@ window.addEventListener('scroll',()=>{
     scrineYP=yy;
 });
 
-console.log(window.screenX)
+window.addEventListener('load',()=>{
+    setTimeout(()=>loader.style='display:none',2000)
+})

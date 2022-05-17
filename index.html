@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,10 +35,63 @@
     <title>Tap & Work</title>
   </head>
   <body>
+    <div class="loader">
+      <div class="img">
+        <img src="./img/logo.png" alt="" />
+      </div>
+    </div>
+    <!-- modal serch  -->
+    <div class="modal" id="serch" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="fa-solid fa-location-dot loca"></i>Search Location
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <input
+                class="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search..."
+              />
+              <datalist id="datalistOptions">
+                <option value="San Francisco"></option>
+                <option value="New York"></option>
+                <option value="Seattle"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+                <option value="Dhaka"></option>
+                <option value="chandpur"></option>
+                <option value="comilla"></option>
+                <option value="chitogong"></option>
+                <option value="bangladesh"></option>
+              </datalist>
+              <div class="modal-submit">
+                <button type="submit" class="btn btn-primary">selact</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>search loacation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal serch  -->
+
     <section class="body">
       <div class="gap"></div>
       <section class="hedar">
-        <nav class="nav show">
+        <nav class="nav">
           <a href="#">
             <img src="./img/logo.png" alt="" />
           </a>
@@ -55,7 +109,17 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Curent Location</a></li>
-                <li><a class="dropdown-item" href="#">search location</a></li>
+
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#serch"
+                  >
+                    Search Location
+                  </button>
+                </li>
               </ul>
               <input
                 type="text"
@@ -100,7 +164,16 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Curent Location</a></li>
-                  <li><a class="dropdown-item" href="#">search location</a></li>
+                  <li>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#serch"
+                    >
+                      Search Location
+                    </button>
+                  </li>
                 </ul>
                 <input
                   type="text"
@@ -125,7 +198,11 @@
         </div>
       </section>
       <!-- head section end -->
-      <section class="app-download">
+      <section
+        class="app-download"
+        data-0=" opacity:0;height:0px;"
+        data-300="opacity:1;height:150px;"
+      >
         <div class="text">
           <h1>Download Our App</h1>
           <p>get bettar experience</p>
@@ -140,8 +217,14 @@
         </div>
       </section>
       <!-- app download end -->
-      <div class="gap"></div>
+      <div class="gap">
+        <img src="" alt="" />
+      </div>
     </section>
     <script src="./res/js/nav.js"></script>
+    <script src="./res/js/skrollr.js" charset="utf-8"></script>
+    <script charset="utf-8">
+      var s = skrollr.init();
+    </script>
   </body>
 </html>
