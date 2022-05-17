@@ -4,6 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"
+      integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link  -->
     <link rel="stylesheet" href="./res/css/main.min.css" />
     <title>Tap & Work</title>
   </head>
@@ -11,24 +37,87 @@
     <section class="body">
       <div class="gap"></div>
       <section class="hedar">
-        <nav>
+        <nav class="nav show">
           <a href="#">
             <img src="./img/logo.png" alt="" />
-            <ol>
-              <li>
-                <a id="btn-login" href="/login">Login</a>
-              </li>
-              <li>
-                <a href="/login">singup</a>
-              </li>
-            </ol>
           </a>
+
+          <!-- form start  -->
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-location-dot loca"></i>location
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Curent Location</a></li>
+                <li><a class="dropdown-item" href="#">search location</a></li>
+              </ul>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Text input with dropdown button"
+                placeholder="find your service"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="submit"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+          <!-- form end  -->
+
+          <ol>
+            <li>
+              <a id="btn-login" href="/login">Login</a>
+            </li>
+            <li>
+              <a href="/login">singup</a>
+            </li>
+          </ol>
         </nav>
         <div class="hero">
           <div class="text">
             <h1>tap and work</h1>
             <p>Discover Tousand Of Local Worker</p>
-            <a href="home.html" id="get-start">get start</a>
+            <!-- form start  -->
+            <form action="" method="post">
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-location-dot loca"></i>location
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Curent Location</a></li>
+                  <li><a class="dropdown-item" href="#">search location</a></li>
+                </ul>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                  placeholder="find your service"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+            <!-- form end  -->
           </div>
           <div class="img">
             <img src="./img/phone-moc.png" alt="" />
@@ -51,95 +140,8 @@
         </div>
       </section>
       <!-- app download end -->
-      <section class="service">
-        <div class="titel">
-          <h1>we have</h1>
-        </div>
-        <div class="sers">
-          <div class="pres">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Expart team</h1>
-            <p>
-              we have Expart mecanic and man power.,who give you best service
-            </p>
-          </div>
-          <!-- nn  -->
-          <div class="pres">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Expart team</h1>
-            <p>
-              we have Expart mecanic and man power.,who give you best service
-            </p>
-          </div>
-          <!-- nn  -->
-          <div class="pres">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Expart team</h1>
-            <p>
-              we have Expart mecanic and man power.,who give you best service
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- service end  -->
-      <section class="about">
-        <h1>About us</h1>
-        <p>
-          We Provide you best tecnical service in your area. We have a
-          experience team.They can provide you a batter tacnical solution. Just
-          go and find out the best service for you.
-        </p>
-      </section>
-      <!-- about end  -->
-      <section class="catagory">
-        <div class="titel">
-          <h1>We provide</h1>
-        </div>
-        <div class="cat">
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Electrician</h1>
-          </div>
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Plumber</h1>
-          </div>
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Car Machanic</h1>
-          </div>
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Lundry</h1>
-          </div>
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Cleaning</h1>
-          </div>
-          <!-- nn  -->
-          <div class="worker">
-            <img src="./img/icon/team.png" alt="" />
-            <h1>Bicycle Mechanic</h1>
-          </div>
-        </div>
-      </section>
-      <!-- catagory  -->
-      <section class="newsletar">
-        <form action="#" method="post">
-          <div class="text">
-            <h1>subscribe our newsletar</h1>
-          </div>
-          <div class="action">
-            <input type="email" name="email" placeholder="Enter your email" />
-            <button>subscribe</button>
-          </div>
-        </form>
-      </section>
+      <div class="gap"></div>
     </section>
+    <script src="./res/js/nav.js"></script>
   </body>
 </html>
