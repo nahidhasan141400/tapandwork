@@ -267,3 +267,53 @@ body{
         }
     }
 }
+.category{
+    .card-design{
+        border-radius: 0px;
+        border: none;
+        @media (min-width:1202px) {
+            border-radius: 20px;
+            border: 0.1px solid $bl;
+        }
+    }
+    .card-group{
+        display: flex;
+        justify-content: center;
+        .one{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .card-header{
+        border: none;
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+            color: #1f5f96;
+            text-transform: capitalize;
+        }
+    }
+    .card-category{
+        width: 130px;
+        height: 130px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        margin: 20px;
+        filter: drop-shadow(3px 3px 2px rgb(190, 190, 190));
+        &:hover{
+            transform: translateX(-4px);
+            filter: drop-shadow(6px 6px 5px rgb(103, 103, 103));
+        }
+        
+        img{
+            height: 90px;
+        }
+        h1{
+            font-size: 20px;
+            color: #1f5f96;
+            margin-top: 10px;
+            text-transform: capitalize;
+        }
+    }
+}
