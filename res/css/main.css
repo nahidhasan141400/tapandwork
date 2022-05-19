@@ -167,6 +167,95 @@ body {
   scroll-behavior: smooth;
 }
 
+.navbitn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  background: #3198f1;
+  z-index: 4;
+  border-radius: 50%;
+}
+
+.navbitn button {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbitn button:hover {
+  -webkit-animation: navbtnanim 0.6s linear infinite;
+          animation: navbtnanim 0.6s linear infinite;
+}
+
+@-webkit-keyframes navbtnanim {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navbtnanim {
+  0% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.side-nav {
+  position: fixed;
+  bottom: 0px;
+  height: 100vh;
+  z-index: 5;
+  left: -100%;
+}
+
+.side-nav .navigator {
+  height: 100vh;
+}
+
+.side-nav .navigator .ehi {
+  height: 100%;
+}
+
+.side-nav .navigator .ehi .cn span {
+  color: #3198f1;
+}
+
+.side-nav .navigator .ehi .cn button {
+  background: none;
+  font-size: 30px;
+  color: #3198f1;
+  border: none;
+}
+
+.side-nav .navigator .ehi .cn button:hover {
+  -webkit-animation: navbtnanim 0.6s ease-out infinite;
+          animation: navbtnanim 0.6s ease-out infinite;
+}
+
 .body {
   max-width: 1200px;
   margin: auto;
@@ -594,8 +683,8 @@ body {
 }
 
 .category .card-category:hover {
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  -webkit-transform: translateX(-4px) scale(105%);
+          transform: translateX(-4px) scale(105%);
   -webkit-filter: drop-shadow(6px 6px 5px #676767);
           filter: drop-shadow(6px 6px 5px #676767);
 }

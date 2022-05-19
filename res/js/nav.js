@@ -15,3 +15,14 @@ window.addEventListener('scroll',()=>{
 window.addEventListener('load',()=>{
     setTimeout(()=>loader.style='display:none',2000)
 })
+
+let sidenavB = document.querySelector('#sidenav-b');
+let sidenavCB = document.querySelector('#sidenavC-b');
+let sidNAv = document.querySelector('.side-nav')
+
+sidenavB.addEventListener("click",()=>{
+    sidNAv.style="left:0px"
+})
+sidenavCB.addEventListener("click",()=>{
+    sidNAv.style="left:-100%"
+})
