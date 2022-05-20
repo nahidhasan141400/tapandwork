@@ -37,6 +37,9 @@
         color: #455b6e;
         text-transform: capitalize;
         position: relative;
+        @media (max-width: 650px) {
+            font-size: 25px;
+        }
         &::after{
             content: '';
             width:400px;
