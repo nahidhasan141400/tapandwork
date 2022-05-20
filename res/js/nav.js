@@ -26,3 +26,12 @@ sidenavB.addEventListener("click",()=>{
 sidenavCB.addEventListener("click",()=>{
     sidNAv.style="left:-100%"
 })
+
+let gofor = (it) => {
+    let h = it.parentElement.children[3];
+    h.scrollLeft += 250;
+  };
+let goback = (it) => {
+    let h = it.parentElement.children[3];
+    h.scrollLeft -= 250;
+  };

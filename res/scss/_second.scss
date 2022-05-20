@@ -25,6 +25,7 @@
 .gap{
     width: 0px;
     height: 100vh;
+    
 }
 .titel{
     width: 100%;
@@ -32,6 +33,7 @@
     h1{
         font-size: 40px;
         padding: 20px;
+        font-weight: 600;
         color: #455b6e;
         text-transform: capitalize;
         position: relative;
@@ -43,6 +45,10 @@
             position: absolute;
             bottom: 40px;
             left: 0px;
+            @media (max-width:1060px) {
+                display: none;
+                
+            }
         }
 
     }
