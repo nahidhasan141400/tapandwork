@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -83,7 +84,7 @@ body{
 .body{
     max-width: 1200px;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 .modal-submit{
     width: 100%;
@@ -461,6 +462,7 @@ body{
 
                 img{
                     width: 100%;
+                    height: 180px;
                     border-radius: 10px 10px 0 0;
                 }
                 h1{
@@ -518,6 +520,9 @@ body{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    &:hover{
+                        filter: drop-shadow(0 0 10px rgb(67, 189, 255));
+                    }
                     .icon{
                         width: 70px;
                         height: 70px;
@@ -551,5 +556,59 @@ body{
                 }
             }
         }
+    }
+}
+.social-link{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    .body{
+        height: 100%;
+        .titel{
+            height: 50px;
+        }
+        
+    .link-conteiner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        a{
+            width: 100px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            &:hover > i{
+                transform: translateY( -10px) scale(115%);
+                filter: drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.35));
+                color: #fc963c;
+            }
+            &:hover > h1{
+                top: 30%;
+                filter: blur(2px);
+                font-size: 34px;
+            }
+            i{
+                font-size: 50px;
+                color: $bl;
+                z-index: 2;
+
+            }
+            h1{
+                position: absolute;
+                top: 100%;
+                // color: #bfff36;
+                color: $bl;
+                font-size: 10px;
+                filter: blur(10px);
+            }
+        }
+    }
     }
 }

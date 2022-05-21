@@ -163,6 +163,7 @@
           box-sizing: border-box;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -272,7 +273,6 @@ body {
 .body {
   max-width: 1200px;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .modal-submit {
@@ -865,6 +865,7 @@ body {
 
 .servise .cont-ser .ser-warp a img {
   width: 100%;
+  height: 180px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -955,6 +956,11 @@ body {
           align-items: center;
 }
 
+.how-work .body .work-con .tiutoriyal .one:hover {
+  -webkit-filter: drop-shadow(0 0 10px #43bdff);
+          filter: drop-shadow(0 0 10px #43bdff);
+}
+
 .how-work .body .work-con .tiutoriyal .one .icon {
   width: 70px;
   height: 70px;
@@ -995,4 +1001,82 @@ body {
 
 .how-work .body .work-con .img img {
   width: 100%;
+}
+
+.social-link {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.social-link .body {
+  height: 100%;
+}
+
+.social-link .body .titel {
+  height: 50px;
+}
+
+.social-link .body .link-conteiner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.social-link .body .link-conteiner a {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.social-link .body .link-conteiner a:hover > i {
+  -webkit-transform: translateY(-10px) scale(115%);
+          transform: translateY(-10px) scale(115%);
+  -webkit-filter: drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(-3px 4px 3px rgba(0, 0, 0, 0.35));
+  color: #fc963c;
+}
+
+.social-link .body .link-conteiner a:hover > h1 {
+  top: 30%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  font-size: 34px;
+}
+
+.social-link .body .link-conteiner a i {
+  font-size: 50px;
+  color: #3198f1;
+  z-index: 2;
+}
+
+.social-link .body .link-conteiner a h1 {
+  position: absolute;
+  top: 100%;
+  color: #3198f1;
+  font-size: 10px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
