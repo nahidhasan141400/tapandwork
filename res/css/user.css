@@ -1,0 +1,378 @@
+#btn-login {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #3198f1;
+  color: #FFF;
+}
+
+#btn-login:hover {
+  background-color: #205d93;
+}
+
+#get-start {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: white;
+  background: #3198f1;
+  border-radius: 20px;
+  font-size: 26px;
+  margin: 20px;
+  font-weight: 600;
+}
+
+#get-start:hover {
+  color: #3198f1;
+  background: white;
+}
+
+.gap {
+  width: 0px;
+  height: 100vh;
+}
+
+.titel {
+  width: 100%;
+  text-align: center;
+}
+
+.titel h1 {
+  font-size: 40px;
+  padding: 20px;
+  font-weight: 600;
+  color: #455b6e;
+  text-transform: capitalize;
+  position: relative;
+}
+
+@media (max-width: 650px) {
+  .titel h1 {
+    font-size: 25px;
+  }
+}
+
+.titel h1::after {
+  content: '';
+  width: 400px;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#205d93), to(#6293bd));
+  background: linear-gradient(90deg, #205d93, #6293bd);
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+
+@media (max-width: 1060px) {
+  .titel h1::after {
+    display: none;
+  }
+}
+
+.npr {
+  position: relative;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  background: #FFF;
+}
+
+.loader .img {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 11;
+}
+
+.loader .img::before {
+  content: '';
+  height: 110%;
+  width: 110%;
+  position: absolute;
+  background: linear-gradient(30deg, #3d61ff, white 80%);
+  border-radius: 50%;
+  z-index: -2;
+  -webkit-animation: animRot 2s infinite linear;
+          animation: animRot 2s infinite linear;
+}
+
+.loader .img::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.loader .img img {
+  height: 100%;
+}
+
+@-webkit-keyframes animRot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animRot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3198f1;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .header {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.171);
+          box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.171);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .header .back-btn {
+  background-color: transparent;
+  padding: 5px 20px;
+  border: none;
+  color: #3198f1;
+  font-size: 30px;
+}
+
+.main .header .back-btn:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.main .header .user_titel {
+  width: 100%;
+  text-align: center;
+}
+
+.main .header .user_titel h1 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #3198f1;
+  font-weight: 700;
+}
+
+.main .detaile {
+  max-width: 1500px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.main .detaile .img {
+  width: 100%;
+}
+
+.main .detaile .img img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 10px 20px 50px;
+}
+
+.main .detaile .about {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .detaile .about .portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .detaile .about .portfolio .name h1 {
+  font-size: 25px;
+  color: #3198f1;
+  font-weight: 700;
+}
+
+.main .detaile .about .portfolio .name .adrees {
+  font-size: 15px;
+}
+
+.main .detaile .about .portfolio .name .adrees .icon {
+  color: #3198f1;
+}
+
+.main .detaile .about .price h1 {
+  font-size: 25px;
+}
+
+.main .detaile .about .price h1 span {
+  color: #3198f1;
+}
+
+.main .detaile .about .experianc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .detaile .about .experianc .card-ex {
+  width: 170px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f0f5f5;
+}
+
+.main .detaile .about .experianc .card-ex:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.main .detaile .about .experianc .card-ex .icon {
+  font-size: 25px;
+  color: #3198f1;
+}
+
+.main .detaile .about .experianc .card-ex .text h1 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.main .detaile .about .experianc .card-ex .text h2 {
+  font-size: 13px;
+}
+
+.main .detaile .about .book-btn-co {
+  width: 100%;
+  text-align: center;
+}
+
+.main .detaile .about .book-btn-co button {
+  cursor: pointer;
+  background: #3198f1;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.main .detaile .about .book-btn-co button:hover {
+  background-color: #4c83b3;
+}
+
+.main .bio {
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.main .bio h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3198f1;
+}
+
+.main .bio p {
+  font-size: 17px;
+  color: #222222;
+}
