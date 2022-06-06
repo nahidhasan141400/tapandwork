@@ -35,3 +35,6 @@ let goback = (it) => {
     let h = it.parentElement.children[3];
     h.scrollLeft -= 250;
   };
+
+
+ 

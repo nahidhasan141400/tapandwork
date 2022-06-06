@@ -12,3 +12,17 @@ nav.addEventListener('click',(e)=>{
 });
  
 // end 
+
+
+// let cards = document.querySelectorAll('.service');
+
+// let observ = new IntersectionObserver((entry)=>{
+//     entry[0].target.classList.toggle('show', entry[0].isIntersecting);
+//     // console.log(entry[0].target);
+// },
+// {
+//     threshold: 0,
+// })
+
+// cards.forEach(card => observ.observe(card))
+// // observ.observe(cards[0])
